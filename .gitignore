@@ -1,3 +1,5 @@
+platforms/ios/www
+xcuserdata
 .DS_Store
 *.swp
 *.swo
