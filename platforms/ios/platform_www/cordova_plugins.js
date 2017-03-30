@@ -1,14 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "id": "ru.appsm.customkeyboard.customkeyboard",
-        "file": "plugins/ru.appsm.customkeyboard/www/customkeyboard.js",
-        "pluginId": "ru.appsm.customkeyboard",
-        "clobbers": [
-            "window.CustomKeyboard"
-        ]
-    },
-    {
         "id": "cordova-plugin-console.console",
         "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
         "pluginId": "cordova-plugin-console",
@@ -29,7 +21,6 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "cordova-plugin-whitelist": "1.3.2",
-    "ru.appsm.customkeyboard": "0.1.2",
     "cordova-plugin-console": "1.0.6"
 };
 // BOTTOM OF METADATA
