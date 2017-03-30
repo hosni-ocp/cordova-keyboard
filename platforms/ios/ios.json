@@ -4,16 +4,40 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {}
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"CustomKeyboard\"><param name=\"ios-package\" onload=\"true\" value=\"CDVCustomKeyboard\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.silamir.cordova.keyboard"
+        },
+        "ru.appsm.customkeyboard": {
+            "PACKAGE_NAME": "com.silamir.cordova.keyboard"
         }
     },
     "dependent_plugins": {},
-    "modules": [],
+    "modules": [
+        {
+            "id": "ru.appsm.customkeyboard.customkeyboard",
+            "file": "plugins/ru.appsm.customkeyboard/www/customkeyboard.js",
+            "pluginId": "ru.appsm.customkeyboard",
+            "clobbers": [
+                "window.CustomKeyboard"
+            ]
+        }
+    ],
     "plugin_metadata": {
-        "cordova-plugin-whitelist": "1.3.2"
+        "cordova-plugin-whitelist": "1.3.2",
+        "ru.appsm.customkeyboard": "0.1.2"
     }
 }
