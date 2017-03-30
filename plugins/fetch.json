@@ -14,5 +14,14 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "ru.appsm.customkeyboard": {
+        "source": {
+            "type": "git",
+            "url": "https://stephanejais@bitbucket.org/stephanejais/cordova-custom-keyboard.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

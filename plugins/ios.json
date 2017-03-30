@@ -12,6 +12,9 @@
         },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.silamir.cordova.keyboard"
+        },
+        "ru.appsm.customkeyboard": {
+            "PACKAGE_NAME": "com.silamir.cordova.keyboard"
         }
     },
     "dependent_plugins": {}
