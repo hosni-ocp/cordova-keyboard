@@ -17,6 +17,7 @@
 		3047A5141AB8059700498E2A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5111AB8059700498E2A /* build.xcconfig */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		B2430FD7D2EB44FBBF9149D9 /* CDVCustomKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC44187ED04CCDB6CD4D62 /* CDVCustomKeyboard.m */; };
+		4A2783766B5D4EA29ECBC0C0 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = BD93039D883F4D6DA68DFFDC /* CDVLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		0AAC44187ED04CCDB6CD4D62 /* CDVCustomKeyboard.m */ = {isa = PBXFileReference; name = "CDVCustomKeyboard.m"; path = "ru.appsm.customkeyboard/CDVCustomKeyboard.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		EC3BFBBDB9ED43CAB9BC1685 /* CDVCustomKeyboard.h */ = {isa = PBXFileReference; name = "CDVCustomKeyboard.h"; path = "ru.appsm.customkeyboard/CDVCustomKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BD93039D883F4D6DA68DFFDC /* CDVLogger.m */ = {isa = PBXFileReference; name = "CDVLogger.m"; path = "cordova-plugin-console/CDVLogger.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		0EA9A2AAF94549188D90AC26 /* CDVLogger.h */ = {isa = PBXFileReference; name = "CDVLogger.h"; path = "cordova-plugin-console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,8 @@
 			children = (
 				0AAC44187ED04CCDB6CD4D62 /* CDVCustomKeyboard.m */,
 				EC3BFBBDB9ED43CAB9BC1685 /* CDVCustomKeyboard.h */,
+				BD93039D883F4D6DA68DFFDC /* CDVLogger.m */,
+				0EA9A2AAF94549188D90AC26 /* CDVLogger.h */,
 			);
 			name = Plugins;
 			path = "CordovaKeyboard/Plugins";
@@ -277,6 +282,7 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				B2430FD7D2EB44FBBF9149D9 /* CDVCustomKeyboard.m in Sources */,
+				4A2783766B5D4EA29ECBC0C0 /* CDVLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

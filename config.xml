@@ -24,4 +24,5 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <engine name="ios" spec="~4.3.1" />
+    <plugin name="cordova-plugin-console" spec="~1.0.6" />
 </widget>
