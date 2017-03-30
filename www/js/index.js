@@ -27,7 +27,8 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-        console.log('hello');
+
+        // Register keyboard listeners
         var openKeyboardListener = function(result) {
           console.log('open');
           console.log(result);
@@ -37,25 +38,13 @@ var app = {
           console.log(result);
         };
         CustomKeyboard.setOpenCloseListener(openKeyboardListener, closeKeyboardListener);
+
+        // Unregister keyboard listeners (and free our callbacks)
         setTimeout(function() {
                    console.log("unset");
                    CustomKeyboard.unsetOpenCloseListener();
-                   }, 4000);
-        console.log('done');
-        this.receivedEvent('deviceready');
-    },
+                   }, 60000);
 
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        return;
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
     }
 };
 
