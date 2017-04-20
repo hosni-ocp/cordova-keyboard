@@ -19,7 +19,7 @@
 var app = {
     // Application Constructor
     initialize: function() {
-        document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+        //document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
 
     // deviceready Event Handler
@@ -50,21 +50,30 @@ var app = {
 
 app.initialize();
 
-var toggle = document.getElementById('toggle');
-var output = document.getElementById('output');
-
-toggle.addEventListener('click', function() {
+var container = document.getElementById('container');
+var field = document.getElementById('field');
+container.addEventListener('click', function() {
   var elt = this;
-  if (elt.className == 'show')  {
-    CustomKeyboard.open(123456, 9, function(val) {console.log(val);});
-
-    elt.className = 'hide';
-    elt.innerHTML = 'Hide keyboard';
-  } else {
-    CustomKeyboard.close()
-    elt.className = 'show';
-    elt.innerHTML = 'Show keyboard.';
-  }
-
+  
+  // le chiffre indique le type de clavier (text, number, decimal, ...)
+  CustomKeyboard.open(field.value, 9, function(val) {field.value = val;});
 });
+
+// var toggle = document.getElementById('toggle');
+// var output = document.getElementById('output');
+// toggle.addEventListener('click', function() {
+// //toggle.addEventListener('focus', function() {
+//   var elt = this;
+//   if (elt.className == 'show')  {
+//     CustomKeyboard.open(123456, 9, function(val) {console.log(val);});
+//     elt.className = 'hide';
+//     elt.innerHTML = 'Hide keyboard';
+//   } else {
+//     CustomKeyboard.close()
+//     elt.className = 'show';
+//     elt.innerHTML = 'Show keyboard.';
+//   }
+// });
+
+
 

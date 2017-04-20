@@ -7,14 +7,14 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.silamir.cordova.keyboard"
-        },
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.silamir.cordova.keyboard"
+            "PACKAGE_NAME": "com.ocp.apppatient.mypharmactiv"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ocp.apppatient.mypharmactiv"
         },
         "ru.appsm.customkeyboard": {
-            "PACKAGE_NAME": "com.silamir.cordova.keyboard"
+            "PACKAGE_NAME": "com.ocp.apppatient.mypharmactiv"
         }
     },
     "dependent_plugins": {}
